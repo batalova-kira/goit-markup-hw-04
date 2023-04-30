@@ -355,6 +355,7 @@ align-items: center;
 color: var(--subtle-text-color);
 font-family: inherit;
 font-style: normal;
+height: 100%;
 border: 1px solid var(--subtle-text-color);
 border-radius: 4px;}
 
@@ -378,7 +379,7 @@ margin-right: auto;
 
 background-color: var(--title-text-color);}
 
-.end {
+.footer-all {
     display: flex;
     align-items: baseline;
 }
