@@ -38,6 +38,10 @@ img {
 
 .link {text-decoration: none;}
 
+.flex {
+    display: flex;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -173,6 +177,15 @@ letter-spacing: 0.02em;
 
 .section-list > .item:nth-child(4n) {
     margin-right: 0;
+}
+
+.section-wrapper {
+    padding: 24px 102px;
+    margin-bottom: 8px;
+
+    background-color: var(--light-color);
+    border-radius: 4px;
+
 }
 
 .section-title {
@@ -353,9 +366,7 @@ border: 1px solid var(--pressed-state-color);
 
 
 /* Footer */
-.end {
-    display: flex;
-}
+
 
 .footer {
 padding-top: 100px;
