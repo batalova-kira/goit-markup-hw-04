@@ -38,10 +38,6 @@ img {
 
 .link {text-decoration: none;}
 
-.flex {
-    display: flex;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -180,12 +176,15 @@ letter-spacing: 0.02em;
 }
 
 .section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 24px 102px;
     margin-bottom: 8px;
 
+    height: 112px;
     background-color: var(--light-color);
     border-radius: 4px;
-
 }
 
 .section-title {
@@ -282,7 +281,7 @@ padding-bottom: 120px;
 }
 
 .card-content {
-    padding: 32px 16px;
+    padding: 32px 0px;
 
     text-align: center;
 }
@@ -325,17 +324,22 @@ padding-bottom: 120px;
 .customers-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     margin-bottom: 72px;
     text-align: center;
+    color: var(--title-text-color);
 }
 .customers-list {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .customers-item {
     margin-right: 24px;
+
+    width: calc((100% - 120px) / 6);
+    height: 88px;
 }
 
 .customers-item:nth-child(6n) {
@@ -358,8 +362,8 @@ border-radius: 4px;}
 .customers-link:focus {
 color: var(--pressed-state-color);
 border: 1px solid var(--pressed-state-color);
-
 }
+
 .customers-icon {
     fill: currentColor;
 }
@@ -367,13 +371,17 @@ border: 1px solid var(--pressed-state-color);
 
 /* Footer */
 
-
 .footer {
 padding-top: 100px;
 padding-bottom: 100px;
 margin-right: auto;
 
 background-color: var(--title-text-color);}
+
+.flex {
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-left {
     display: inline-block;
@@ -414,9 +422,10 @@ background-color: var(--title-text-color);}
 .footer-text-social {
     margin-bottom: 16px;
 
-    color: var(--light-color);
+    color: var(--white-background);
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .footer-social {
@@ -431,14 +440,14 @@ background-color: var(--title-text-color);}
         border-radius: 50%;
 }
 
-.footer-social:hover, .footer-link:focus {
+.footer-social:hover, .footer-social:focus {
     background-color: var(--success-color);
     color: var(--light-color);
 }
 
 
 .footer-icon {
-    fill: currentColor;
+    fill: var(--light-color);
 }
 
 /* Button */
@@ -532,12 +541,13 @@ margin-bottom: 48px;}
     display: block;
 }
 
-.example-link:hover {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.example-link:hover, .example-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .example-content {
     padding: 32px 16px;
+
     border: 1px solid var(--accent-color);
     border-top: none;
 }
@@ -554,8 +564,8 @@ letter-spacing: 0.02em;}
 .example-text {color: var(--primary-text-color);
 
 font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;}
+font-size: 16px;
+line-height: 1.5;}
 
 .example-back {color: var(--light-color);
     background-color: var(--primary-brand-color);
