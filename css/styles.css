@@ -38,6 +38,11 @@ img {
 
 .link {text-decoration: none;}
 
+.end {
+    display: flex;
+    align-items: baseline;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -379,10 +384,7 @@ margin-right: auto;
 
 background-color: var(--title-text-color);}
 
-.end {
-    display: flex;
-    align-items: baseline;
-}
+
 
 .footer-left {
     margin-right: 120px;
