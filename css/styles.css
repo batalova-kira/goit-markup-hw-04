@@ -378,17 +378,18 @@ margin-right: auto;
 
 background-color: var(--title-text-color);}
 
-.flex {
+.end {
     display: flex;
     align-items: baseline;
 }
 
 .footer-left {
-    display: inline-block;
+
     margin-right: 120px;
 }
 
 .footer-center {
+    
 }
 
 .footer-link {
