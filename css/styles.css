@@ -379,13 +379,12 @@ margin-right: auto;
 
 background-color: var(--title-text-color);}
 
-.footer-all {
+.end {
     display: flex;
     align-items: baseline;
 }
 
 .footer-left {
-
     margin-right: 120px;
 }
 
