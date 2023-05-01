@@ -340,8 +340,6 @@ padding-bottom: 120px;
 }
 
 .customers-item {
-    margin-right: 24px;
-
     width: calc((100% - 120px) / 6);
     height: 88px;
 }
@@ -359,6 +357,7 @@ color: var(--subtle-text-color);
 font-family: inherit;
 font-style: normal;
 height: 100%;
+width: 100%;
 border: 1px solid var(--subtle-text-color);
 border-radius: 4px;}
 
