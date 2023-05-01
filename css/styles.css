@@ -184,7 +184,6 @@ letter-spacing: 0.02em;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px 102px;
     margin-bottom: 8px;
 
     height: 112px;
@@ -353,7 +352,6 @@ padding-bottom: 120px;
 
 .customers-link {
 display: flex;
-padding: 16px 32px;
 justify-content: center;
 align-items: center;
 
@@ -388,10 +386,6 @@ background-color: var(--title-text-color);}
 
 .footer-left {
     margin-right: 120px;
-}
-
-.footer-center {
-    
 }
 
 .footer-link {
